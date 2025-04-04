@@ -22,18 +22,18 @@ header .name {
   font-size: 26px;
 }
 
-.nav ul {
+nav ul {
   display: flex;
   list-style-type: none;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.nav li {
+nav li {
   padding-inline: 10px;
 }
 
-.nav a {
+nav a {
   text-decoration: none;
   color: #000;
 }
@@ -75,14 +75,15 @@ header .name {
 }
 .about-me__title {
   margin-top: 1em;
-  margin-bottom: 60px;
+  margin-bottom: 2rem;
   font-size: 30px;
 }
 .about-me__introduction {
   font-family: "Spectral";
   font-weight: 800;
   font-style: italic;
-  width: 60%;
+  width: 80%;
+  margin-bottom: 2em;
 }
 #about-me p {
   width: 80%;
@@ -101,7 +102,7 @@ header .name {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: #000000;
   background-color: #beb45a;
   border-radius: 0;
 }
@@ -331,12 +332,12 @@ input[type="submit"] {
     flex-direction: column;
     padding-inline: 0;
   }
-  header .nav,
-  header .nav ul {
+  header nav,
+  header nav ul {
     width: 100%;
     padding: 0 0 0 0;
   }
-  header .nav li {
+  header nav li {
     flex: 1;
     padding-block: 1em;
     text-align: center;
