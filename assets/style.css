@@ -257,6 +257,15 @@ input[type="submit"] {
   background-color: black;
 }
 
+.visually-hidden {
+  background-color: black;
+}
+
+.local-info {
+  display: flex;
+  flex-direction: column;
+}
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
