@@ -131,6 +131,7 @@ nav a {
   object-fit: cover;
   padding: 0.5em;
 }
+
 .mg-prev,
 .mg-next {
   width: 30px;
@@ -249,6 +250,11 @@ form textarea {
 input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
 }
 
 @media all and (max-width: 1180px) {
