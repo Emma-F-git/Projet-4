@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -317,18 +321,35 @@
         itemscope
         itemtype="http://schema.org/Photographer"
       >
-        <span itemprop="name">Nina Carducci Photographe</span>
+        <span>
+          <i class="fa fa-user"></i>
+          <span itemprop="name">Nina Carducci Photographe</span>
+        </span>
+
         <div
           itemprop="address"
           itemscope
           itemtype="http://schema.org/PostalAddress"
         >
-          <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-          <span itemprop="postalCode">33200</span>
-          <span itemprop="addressLocality">Bordeaux</span>
+          <span>
+            <i class="fa fa-map-marker-alt"></i>
+            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
+          </span>
+          <span>
+            <span itemprop="postalCode">33200</span>
+            <span itemprop="addressLocality">Bordeaux</span>
+          </span>
         </div>
-        <span itemprop="telephone">05 56 67 78 89</span>
-        <span itemprop="openingHours"> Lundi au vendredi : 10h00 - 19h00 </span>
+
+        <span>
+          <i class="fa fa-phone"></i>
+          <span itemprop="telephone">05 56 67 78 89</span>
+        </span>
+
+        <span>
+          <i class="fa fa-clock"></i>
+          <span itemprop="openingHours">Lundi au vendredi : 10h00 - 19h00</span>
+        </span>
       </div>
     </footer>
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
