@@ -109,6 +109,7 @@
       }
     },
     openLightBox(element, lightboxId) {
+      console.log(element);
       $(`#${lightboxId}`)
         .find(".lightboxImage")
         .attr("src", element.attr("src"));
