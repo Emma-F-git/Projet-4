@@ -109,11 +109,26 @@
       }
     },
     openLightBox(element, lightboxId) {
-      $(`#${lightboxId}`)
-        .find(".lightboxImage")
-        .attr("src", element.attr("src"));
-      $(`#${lightboxId}`).modal("toggle");
+      let lastFocusedElement = null;
+      lastFocusedElement = document.activeElement;
+      const $modal = $(`#${lightboxId}`);
+      const $lightboxImage = $modal.find(".lightboxImage");
+      $lightboxImage.attr("src", element.attr("src"));
+      $modal.removeAttr("inert");
+      $modal.modal("show");
+      $modal.on("shown.bs.modal", function () {
+        $lightboxImage.attr("tabindex", "0").focus();
+      });
+
+      $modal.on("hide.bs.modal", function () {
+        document.activeElement.blur();
+        $modal.attr("inert", "");
+        if (lastFocusedElement) {
+          $(lastFocusedElement).focus();
+        }
+      });
     },
+
     prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function () {
