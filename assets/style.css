@@ -93,9 +93,6 @@ nav a {
   font-size: 14px;
 }
 
-#gallery {
-  /*	min-height: 100vh; */
-}
 .title {
   text-align: center;
   padding-block: 2em;
@@ -296,6 +293,14 @@ input[type="submit"] {
   height: auto;
   display: block;
   margin: auto;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 @media all and (max-width: 1000px) {
